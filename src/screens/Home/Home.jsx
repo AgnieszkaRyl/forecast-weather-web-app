@@ -9,27 +9,30 @@ export default function Home(){
     return(
         <div>
             <div className={styles.stripe}>
-                <div className={styles.title}>
-                    TWOJA POGODA
-                </div>
-            </div>
-            <div>
                 <div className={styles.row}>
+                <div className={styles.title}>
+                    YOUR WEATHER
+                </div>
                     <div className={styles.container}>
                         <img src={WeatherIcon}/>
                     </div>
                 </div>
+            </div>
+            <div>
+                <div className={styles.row}>
+
+                </div>
                 <div className={styles.description}>
-                    Wpisz miasto którego szukasz aby dowiedzieć się jaka jest tam pogoda
+                    Type a city to find out what the weather is like
                 </div>
 
-                <div className={styles.row}>
-                <input placeholder="Miasto"
+                <div className={styles.row} style={{marginTop: "60px"}}>
+                <input placeholder="City"
                        className={styles.placeholder}
                        value={linkInput}
                        onInput={e => setLinkInput(e.target.value)}/>
                 <Link to={'/found/'+linkInput}>
-                    <button className={styles.button}>Szukaj</button>
+                    <button className={styles.button}>Browse</button>
                 </Link>
                 </div>
             </div>

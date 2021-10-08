@@ -47,7 +47,7 @@ export default function FoundCity(){
                     <div className={styles.text}>
                         <h1>City: {id}</h1>
                         <p>Temperature: {currentWeather.main.temp} Farenheit</p>
-                        <p>Temperature feeling: {currentWeather.main.feels_like} Farenheit</p>
+                        <p>Wind-chill factor: {currentWeather.main.feels_like} Farenheit</p>
                         <p>Description: {currentWeather.weather[0].description}</p>
                         <p>Pressure: {currentWeather.main.pressure}hPa</p>
                         <p>humidity: {currentWeather.main.humidity}%</p>
