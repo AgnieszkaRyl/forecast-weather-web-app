@@ -1,0 +1,62 @@
+.stripe {
+  width: 100%;
+  height: 180px;
+  background-image: url("../../images/sky.png");
+
+}
+
+.title {
+  justify-content: center;
+  align-items: center;
+  font-size: 53px;
+  color: white;
+  display: flex;
+  height: 100%;
+}
+
+.placeholder {
+  background-color: white;
+  width: 400px;
+  border-radius: 60px;
+  height: 60px;
+  border: none;
+  border: 1px solid #6F98CC;
+  -webkit-box-shadow: 2px 2px 12px 0px rgba(203, 204, 208, 1);
+  -moz-box-shadow: 2px 2px 12px 0px rgba(203, 204, 208, 1);
+  box-shadow: 2px 2px 12px 0px rgba(203, 204, 208, 1);
+  padding-left: 30px;
+  font-size: 22px;
+  color: #4D4D4D;
+}
+
+.button {
+  width: 150px;
+  border-radius: 60px;
+  height: 60px;
+  border: none ;
+  background-color: #6F98CC;
+  color: white;
+  margin: 0 20px;
+  font-size: 22px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 0 0;
+}
+
+.description {
+  font-size: 25px;
+  margin: 40px 70px;
+  color: #4D4D4D;
+  display: flex;
+  justify-content: center;
+}

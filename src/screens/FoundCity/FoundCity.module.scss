@@ -1,0 +1,63 @@
+.row {
+  display: flex;
+  justify-content: center;
+  //width: 500px;
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  padding-left: 30px;
+  & p {
+    font-size: 25px;
+  }
+  & h1 {
+    font-size: 50px;
+  }
+}
+
+.photoContainer {
+  //border-right-color: #707070;
+  border-right: 1px #707070 solid;
+  width: 100%;
+  height: 500px;
+}
+
+.background {
+  //background-color: #6F98CC;
+  height: 100vh;
+  width: 100%;
+  //position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background: url("./../../images/skyBackground.jpg") ;
+}
+
+.tile{
+  background-color: white;
+  //width: 50%;
+  //height: 50%;
+  border-radius: 40px;
+  padding: 50px 100px;
+  //position: absolute;
+  //top:50%;
+  //left: 50%
+}
+
+.button {
+  width: 150px;
+  border-radius: 60px;
+  height: 60px;
+  border: none ;
+  background-color: #6F98CC;
+  color: white;
+  margin: 0 20px;
+  font-size: 22px;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}

@@ -1,0 +1,26 @@
+.center {
+  display: flex;
+  justify-content: center;
+  & img {
+    height: 400px;
+    width: auto;
+  }
+}
+
+.button {
+  width: 300px;
+  border-radius: 60px;
+  height: 60px;
+  border: none ;
+  background-color: #6F98CC;
+  color: white;
+  margin: 40px 20px;
+  font-size: 22px;
+}
+
+.vertical {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+}
