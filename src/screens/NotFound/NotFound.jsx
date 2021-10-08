@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import * as styles from "./NotFound.module.scss";
 import {Link} from "react-router-dom";
 import Broken from "./../../images/broken.png"
+import GoToButton from "../../Components/GoToButton/GoToButton";
 
 
 export default function NotFound(){
@@ -14,9 +15,7 @@ export default function NotFound(){
                 <img src={Broken}/>
             </div>
             <div className={styles.center}>
-            <Link to="/" >
-                <button className={styles.button}>Come back!</button>
-            </Link>
+                <GoToButton linkTo="/" buttonWidth={300} title="Come back!"/>
             </div>
         </div>
     )

@@ -3,6 +3,7 @@ import * as styles from './FoundCity.module.scss'
 import {Link, useParams} from "react-router-dom";
 import NotFound from "../NotFound/NotFound";
 import Loading from "../Loading/Loading";
+import GoToButton from "../../Components/GoToButton/GoToButton";
 
 const buildQuery= query => {
     const path = 'https://api.openweathermap.org/data/2.5/weather?q='+query+'&appid=c372af09d6ed7cb1e42609edc177199e'
@@ -54,9 +55,9 @@ export default function FoundCity(){
                     </div>
                 </div>
                 <div className={styles.rightSide}>
-                    <Link to='/'>
-                        <button className={styles.button}>Come back</button>
-                    </Link>
+
+                    <GoToButton buttonWidth={200} linkTo='/' title="Come back"/>
+
                 </div>
             </div>
         </div>

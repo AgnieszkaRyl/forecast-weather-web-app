@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import * as styles from './Home.module.scss'
 import {Link} from "react-router-dom";
 import WeatherIcon from "./../../images/weatherIcon.png"
+import GoToButton from "../../Components/GoToButton/GoToButton";
 
 export default function Home(){
     const [linkInput, setLinkInput]=useState("");
@@ -35,9 +36,7 @@ export default function Home(){
                            className={styles.placeholder}
                            value={linkInput}
                            onInput={e => setLinkInput(e.target.value)}/>
-                    <Link to={'/found/'+linkInput}>
-                        <button className={styles.button}>Browse</button>
-                    </Link>
+                    <GoToButton buttonWidth={180} title="Browse" linkTo={'/found/'+linkInput}/>
                 </div>
             </div>
         </div>
