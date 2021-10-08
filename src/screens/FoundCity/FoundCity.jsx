@@ -35,7 +35,8 @@ export default function FoundCity(){
     if(!currentWeather.main){
         return <NotFound/>
     }
-
+    const temperatureCelcius=Math.round((currentWeather.main.temp - 273.15)*100)/100
+    const temperatureCelciusFeelsLike=Math.round((currentWeather.main.feels_like - 273.15)*100)/100
     return(
         <div className={styles.background}>
             <div className={styles.tile}>
@@ -45,10 +46,10 @@ export default function FoundCity(){
                             <h1>City: {currentWeather.name}</h1>
                             <img src={getImagePath(currentWeather.weather[0].icon)} width={150} height={150} alt="icon"/>
                         </div>
-                        <p>Temperature: {currentWeather.main.temp} Farenheit</p>
-                        <p>Wind-chill factor: {currentWeather.main.feels_like} Farenheit</p>
+                        <p>Temperature: {temperatureCelcius} Celsius</p>
+                        <p>Wind-chill factor: {temperatureCelciusFeelsLike} Celsius</p>
                         <p>Description: {currentWeather.weather[0].description}</p>
-                        <p>Pressure: {currentWeather.main.pressure}hPa</p>
+                        <p>Pressure: {currentWeather.main.pressure} hPa</p>
                         <p>Humidity: {currentWeather.main.humidity}%</p>
                     </div>
                 </div>
