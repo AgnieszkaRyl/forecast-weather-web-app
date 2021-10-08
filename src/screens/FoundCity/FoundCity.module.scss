@@ -26,10 +26,8 @@
 }
 
 .background {
-  //background-color: #6F98CC;
   height: 100vh;
   width: 100%;
-  //position: relative;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -38,13 +36,8 @@
 
 .tile{
   background-color: white;
-  //width: 50%;
-  //height: 50%;
   border-radius: 40px;
   padding: 50px 100px;
-  //position: absolute;
-  //top:50%;
-  //left: 50%
 }
 
 .button {

@@ -40,19 +40,17 @@ export default function FoundCity(){
         <div className={styles.background}>
             <div className={styles.tile}>
                 <div className={styles.row}>
-                    {/*<div className={styles.photoContainer}>*/}
-                    {/*    tutaj coś jest*/}
-                    {/*</div>*/}
+
                     <div className={styles.text}>
                         <div className={styles.row}>
-                            <h1>City: {id}</h1>
-                            <img src={getImagePath(currentWeather.weather[0].icon)} width={150} height={150}/>
+                            <h1>City: {currentWeather.name}</h1>
+                            <img src={getImagePath(currentWeather.weather[0].icon)} width={150} height={150} alt="icon"/>
                         </div>
                         <p>Temperature: {currentWeather.main.temp} Farenheit</p>
                         <p>Wind-chill factor: {currentWeather.main.feels_like} Farenheit</p>
                         <p>Description: {currentWeather.weather[0].description}</p>
                         <p>Pressure: {currentWeather.main.pressure}hPa</p>
-                        <p>humidity: {currentWeather.main.humidity}%</p>
+                        <p>Humidity: {currentWeather.main.humidity}%</p>
                     </div>
                 </div>
                 <div className={styles.rightSide}>
