@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import * as styles from "./NotFound.module.scss";
-import {Link} from "react-router-dom";
 import Broken from "./../../images/broken.png"
 import GoToButton from "../../Components/GoToButton/GoToButton";
 

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import LoadingImg from "./../../images/loading.png"
 import * as styles from "./Loading.module.scss"
 
@@ -10,7 +10,6 @@ export default function Loading(){
             <div className={styles.centring}>
                 <img src={LoadingImg} />
             </div>
-
         </div>
     )
 }

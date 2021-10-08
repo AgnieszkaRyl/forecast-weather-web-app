@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import * as styles from './Home.module.scss'
-import {Link} from "react-router-dom";
 import WeatherIcon from "./../../images/weatherIcon.png"
 import GoToButton from "../../Components/GoToButton/GoToButton";
 

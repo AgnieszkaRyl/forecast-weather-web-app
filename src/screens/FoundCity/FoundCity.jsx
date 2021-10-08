@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import * as styles from './FoundCity.module.scss'
-import {Link, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import NotFound from "../NotFound/NotFound";
 import Loading from "../Loading/Loading";
 import GoToButton from "../../Components/GoToButton/GoToButton";
@@ -36,12 +36,10 @@ export default function FoundCity(){
         return <NotFound/>
     }
 
-
     return(
         <div className={styles.background}>
             <div className={styles.tile}>
                 <div className={styles.row}>
-
                     <div className={styles.text}>
                         <div className={styles.row}>
                             <h1>City: {currentWeather.name}</h1>
@@ -55,9 +53,7 @@ export default function FoundCity(){
                     </div>
                 </div>
                 <div className={styles.rightSide}>
-
                     <GoToButton buttonWidth={200} linkTo='/' title="Come back"/>
-
                 </div>
             </div>
         </div>
