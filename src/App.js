@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from "./screens/Home/Home.jsx"
 import FoundCity from "./screens/FoundCity/FoundCity.jsx";
 import NotFound from "./screens/NotFound/NotFound.jsx";
+import Loading from "./screens/Loading/Loading.jsx";
 
 function App() {
   return (
@@ -15,17 +16,13 @@ function App() {
             <Route path="/found/:id" >
                 <FoundCity />
             </Route>
+            <Route path="/loading">
+                <Loading/>
+            </Route>
             <Route>
                 <NotFound/>
             </Route>
-            <Route
-                render={({ staticContext }) => {
-                    if (staticContext) {
-                        staticContext.statusCode = 404
-                    }
-                    return <NotFound />
-                }}
-            />
+
         </Switch>
 
       </Router>

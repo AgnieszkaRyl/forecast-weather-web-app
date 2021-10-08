@@ -1,0 +1,16 @@
+.title {
+  color: #4D4D4D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centring {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & img {
+    width: 300px;
+    height: 300px;
+  }
+}
